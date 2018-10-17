@@ -16,9 +16,7 @@ def tryStep(String message, Closure block, Closure tearDown = null) {
 
 
 node {
-    triggers {
-        pollSCM('') // Enabling being build on Push
-    }
+    git poll: true
     stage("Checkout") {
         checkout scm
     }
