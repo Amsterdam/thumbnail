@@ -20,15 +20,6 @@ node {
         checkout scm
     }
 
-//    stage("Test") {
-//        tryStep "testing", {
-//            sh "docker-compose -p thumbnail -f .jenkins-test/docker-compose.yml down"
-//            sh "docker-compose -p thumbnail -f .jenkins-test/docker-compose.yml build && " +
-//                    "docker-compose -p thumbnail -f .jenkins-test/docker-compose.yml run -u root --rm tests"
-//        }
-//
-//    }
-
     stage("Build image") {
         tryStep "build", {
             def image = docker.build("build.app.amsterdam.nl:5000/fixxx/thumbnail:${env.BUILD_NUMBER}")
