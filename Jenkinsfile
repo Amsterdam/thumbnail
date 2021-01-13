@@ -1,6 +1,8 @@
 String CONTAINERDIR = "."
 String CONTAINERNAME = "fixxx/thumbnail:${env.BUILD_NUMBER}"
 String DOCKERFILE = "Dockerfile"
+String PLAYBOOK = 'deploy.yml'
+String PLAYBOOKPARAMS = '-e cmdb_id=app_thumbnail'
 
 def tryStep(String message, Closure block, Closure tearDown = null) {
     try {
@@ -57,7 +59,8 @@ if (BRANCH == "master") {
                 build job: 'Subtask_Openstack_Playbook',
                         parameters: [
                                 [$class: 'StringParameterValue', name: 'INVENTORY', value: 'acceptance'],
-                                [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-thumbnail.yml'],
+                                [$class: 'StringParameterValue', name: 'PLAYBOOK', value: "${PLAYBOOK}"],
+                                [$class: 'StringParameterValue', name: 'PLAYBOOKPARAMS', value: "${PLAYBOOKPARAMS}"],
                         ]
             }
         }
@@ -86,7 +89,8 @@ if (BRANCH == "master") {
                 build job: 'Subtask_Openstack_Playbook',
                         parameters: [
                                 [$class: 'StringParameterValue', name: 'INVENTORY', value: 'production'],
-                                [$class: 'StringParameterValue', name: 'PLAYBOOK', value: 'deploy-thumbnail.yml'],
+                                [$class: 'StringParameterValue', name: 'PLAYBOOK', value: "${PLAYBOOK}"],
+                                [$class: 'StringParameterValue', name: 'PLAYBOOKPARAMS', value: "${PLAYBOOKPARAMS}"],
                         ]
             }
         }
