@@ -3,7 +3,7 @@ FROM debian:buster
 
 EXPOSE 80
 
-RUN  apt-get -y update \
+RUN apt-get -y update \
  && apt-get -y upgrade \
  && apt-get -y install nano curl bash wget \
  && apt-get -y install nginx \
