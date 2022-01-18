@@ -47,6 +47,9 @@
     "symfony/cache": {
         "version": "v4.0.8"
     },
+    "symfony/cache-contracts": {
+        "version": "v2.5.0"
+    },
     "symfony/config": {
         "version": "v4.0.8"
     },
@@ -65,11 +68,20 @@
     "symfony/dependency-injection": {
         "version": "v4.0.8"
     },
+    "symfony/deprecation-contracts": {
+        "version": "v2.5.0"
+    },
     "symfony/dotenv": {
         "version": "v4.0.8"
     },
+    "symfony/error-handler": {
+        "version": "v4.4.36"
+    },
     "symfony/event-dispatcher": {
         "version": "v4.0.8"
+    },
+    "symfony/event-dispatcher-contracts": {
+        "version": "v1.1.11"
     },
     "symfony/filesystem": {
         "version": "v4.0.8"
@@ -95,6 +107,9 @@
             "ref": "8a2f7fa50a528f0aad1d7a87ae3730c981b367ce"
         }
     },
+    "symfony/http-client-contracts": {
+        "version": "v2.5.0"
+    },
     "symfony/http-foundation": {
         "version": "v4.0.8"
     },
@@ -104,8 +119,20 @@
     "symfony/lts": {
         "version": "4-dev"
     },
+    "symfony/polyfill-ctype": {
+        "version": "v1.24.0"
+    },
     "symfony/polyfill-mbstring": {
         "version": "v1.7.0"
+    },
+    "symfony/polyfill-php73": {
+        "version": "v1.24.0"
+    },
+    "symfony/polyfill-php80": {
+        "version": "v1.24.0"
+    },
+    "symfony/polyfill-php81": {
+        "version": "v1.24.0"
     },
     "symfony/process": {
         "version": "v4.0.8"
@@ -119,6 +146,9 @@
             "ref": "cda8b550123383d25827705d05a42acf6819fe4e"
         }
     },
+    "symfony/service-contracts": {
+        "version": "v2.5.0"
+    },
     "symfony/translation": {
         "version": "3.3",
         "recipe": {
@@ -128,8 +158,17 @@
             "ref": "6bcd6c570c017ea6ae5a7a6a027c929fd3542cd8"
         }
     },
+    "symfony/translation-contracts": {
+        "version": "v2.5.0"
+    },
     "symfony/validator": {
         "version": "v4.0.8"
+    },
+    "symfony/var-dumper": {
+        "version": "v5.4.2"
+    },
+    "symfony/var-exporter": {
+        "version": "v5.4.2"
     },
     "symfony/web-server-bundle": {
         "version": "3.3",
