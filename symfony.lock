@@ -23,6 +23,9 @@
     "doctrine/lexer": {
         "version": "v1.0.1"
     },
+    "monolog/monolog": {
+        "version": "2.9.1"
+    },
     "psr/cache": {
         "version": "1.0.1"
     },
@@ -118,6 +121,9 @@
     },
     "symfony/lts": {
         "version": "4-dev"
+    },
+    "symfony/monolog-bridge": {
+        "version": "v5.2.12"
     },
     "symfony/polyfill-ctype": {
         "version": "v1.24.0"
